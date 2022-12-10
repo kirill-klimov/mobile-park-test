@@ -24,6 +24,12 @@ export interface Server {
   envID: number;
 }
 
+export interface TestLocation {
+  locationID: number
+  envID: number
+  hint: string
+}
+
 export class Store {
   isLoaded = false;
   locations: Location[] = [];
